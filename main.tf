@@ -5,10 +5,11 @@ variable "capitol" {
 
 locals {
   _capitol_country_mapping = {
-    others    = "Strasbourg"
+    others    = "Belgium"
     amsterdam = "The Netherlands"
     brussels  = "Belgium"
     paris     = "France"
+    italy     = "Milan"
   }
   country = try(local._capitol_country_mapping[lower(var.capitol)],
                 local._capitol_country_mapping["others"])
