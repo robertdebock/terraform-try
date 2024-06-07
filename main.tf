@@ -5,7 +5,7 @@ variable "capitol" {
 
 locals {
   _capitol_country_mapping = {
-    others    = "Belgium"
+    others    = "Unknown"
     amsterdam = "The Netherlands"
     brussels  = "Belgium"
     paris     = "France"
